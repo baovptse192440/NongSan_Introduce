@@ -145,36 +145,75 @@ export default function FaqSection() {
     className="mt-10 flex items-start gap-10"
   >
     {/* CTA BUTTON */}
-    <motion.a
-      href="/contact"
-      whileHover={{
-        scale: 1.07,
-        backgroundColor: "#ffcf3f",
-        boxShadow: "0px 8px 20px rgba(252,185,0,0.35)",
-      }}
-      whileTap={{ scale: 0.95 }}
-      className="bg-[#fcb900] text-white px-8 py-3 rounded-xs shadow-md transition font-semibold"
-    >
-      Get In Touch
-    </motion.a>
+   <motion.a
+  href="/contact"
+  whileHover={{
+    scale: 1.07,
+    backgroundColor: "#ffcf3f",
+    boxShadow: "0px 8px 20px rgba(252,185,0,0.35)",
+  }}
+  whileTap={{ scale: 0.95 }}
+  className="
+    bg-[#fcb900] 
+    text-white 
+    px-6 py-3 
+    md:px-8 md:py-3 
+    rounded-lg 
+    shadow-md 
+    transition 
+    font-semibold 
+    text-sm md:text-base 
+    inline-block 
+    text-center
+  "
+>
+  Get In Touch
+</motion.a>
 
-    {/* PHONE BOX */}
-    <motion.div
-      whileHover={{
-        scale: 1.06,
-        boxShadow: "0 10px 25px rgba(252,185,0,0.28)",
-      }}
-      transition={{ type: "spring", stiffness: 120, damping: 12 }}
-      className="flex gap-4 items-center"
+
+   {/* PHONE BOX */}
+<motion.div
+  whileHover={{
+    scale: 1.06,
+    boxShadow: "0 10px 25px rgba(252,185,0,0.28)",
+  }}
+  transition={{ type: "spring", stiffness: 120, damping: 12 }}
+  className="
+    flex items-center gap-3 
+    sm:gap-4
+  "
+>
+  {/* ICON WRAPPER */}
+  <div
+    className="
+      p-2.5 sm:p-3 
+      rounded-full 
+      bg-[#fcb900] 
+      text-green-700 
+      shadow-md 
+      flex items-center justify-center
+    "
+  >
+    <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+  </div>
+
+  {/* TEXT */}
+  <div className="leading-tight">
+    <h3
+      className="
+        font-bold 
+        text-base sm:text-lg 
+        text-gray-900
+      "
     >
-      <div className="p-3 rounded-full bg-[#fcb900] text-green-700 shadow-md">
-        <Phone />
-      </div>
-      <div>
-        <h3 className="font-bold text-lg">(704) 555-0127</h3>
-        <p className="text-gray-600 text-sm">Call For Booking</p>
-      </div>
-    </motion.div>
+      (704) 555-0127
+    </h3>
+    <p className="text-gray-600 text-xs sm:text-sm">
+      Call For Booking
+    </p>
+  </div>
+</motion.div>
+
   </motion.div>
 </motion.div>
 

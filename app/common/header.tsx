@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Blur Overlay for mobile menu */}
+      {/* ====== OVERLAY MENU ====== */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -40,7 +40,7 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      {/* Header */}
+      {/* ====== HEADER ====== */}
       <motion.header
         initial={{ y: -50, opacity: 0 }}
         animate={{
@@ -57,10 +57,10 @@ export default function Header() {
         transition={{ duration: 0.4, ease: "easeOut" }}
         className="fixed w-full top-0 left-0 z-50"
       >
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between py-4">
 
-            {/* Logo */}
+            {/* ====== LOGO ====== */}
             <motion.a
               href="#home"
               className="flex items-center gap-3"
@@ -70,18 +70,18 @@ export default function Header() {
               <img
                 src={logoSrc}
                 alt="AusGlobal"
-                className="h-14 md:h-16 w-auto object-contain"
+                className="h-12 md:h-14 lg:h-16 w-auto object-contain"
               />
             </motion.a>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-10">
+            {/* ====== DESKTOP NAVIGATION ====== */}
+            <nav className="hidden md:flex items-center gap-6 lg:gap-10">
               {["Trang chủ", "Giới thiệu", "Sản phẩm", "Dịch vụ", "Liên hệ"].map(
                 (item, index) => (
                   <motion.a
                     key={item}
                     href={`#${["home", "about", "products", "services", "contact"][index]}`}
-                    className={`${linkColor} font-medium text-lg relative group`}
+                    className={`${linkColor} font-medium text-base lg:text-lg relative group`}
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 * index }}
@@ -93,12 +93,12 @@ export default function Header() {
               )}
             </nav>
 
-            {/* Language + Mobile Menu */}
-            <div className="flex items-center gap-4">
+            {/* ====== LANGUAGE + MOBILE MENU ====== */}
+            <div className="flex items-center gap-3 md:gap-4">
 
-              {/* Language Switch */}
+              {/* ====== LANGUAGE SWITCH (DESKTOP ONLY) ====== */}
               <motion.div
-                className={`hidden md:flex border ${
+                className={`hidden lg:flex border ${
                   scrolled ? "border-gray-300" : "border-white/50"
                 } px-3 py-2 rounded-xl gap-2 cursor-pointer backdrop-blur-sm`}
                 whileHover={{ scale: 1.07 }}
@@ -109,14 +109,14 @@ export default function Header() {
                 <button className={`${langColor} font-semibold`}>EN</button>
               </motion.div>
 
-              {/* Mobile Toggle */}
+              {/* ====== MOBILE TOGGLE ====== */}
               <motion.button
                 className="md:hidden p-2 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md transition"
                 onClick={() => setMenuOpen(true)}
                 whileTap={{ scale: 0.9 }}
               >
                 <svg
-                  className={`w-8 h-8 ${scrolled ? "text-gray-900" : "text-white"}`}
+                  className={`w-7 h-7 ${scrolled ? "text-gray-900" : "text-white"}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -129,7 +129,7 @@ export default function Header() {
         </div>
       </motion.header>
 
-      {/* Mobile Menu Right Drawer */}
+      {/* ====== MOBILE MENU DRAWER ====== */}
       <motion.div
         initial={{ x: "100%" }}
         animate={{ x: menuOpen ? "0%" : "100%" }}
@@ -162,7 +162,6 @@ export default function Header() {
           )}
         </nav>
 
-        
       </motion.div>
     </>
   );

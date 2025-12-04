@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, Send } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,12 +26,12 @@ export default function Footer() {
           </p>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-6">
+          <div className="flex gap-2 mt-6">
             {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
               <a
                 key={i}
                 href="#"
-                className="p-2 rounded-md bg-white/10 hover:bg-[#f8c32c] transition"
+                className="p-2 rounded-xs bg-[#43aa5c] hover:bg-[#f8c32c] transition"
               >
                 <Icon size={18} />
               </a>
@@ -76,7 +76,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-5">Subscribe Newsletter</h3>
 
-          <form className="flex flex-col gap-3">
+          <form className="flex relative flex-col gap-3">
             <input
               type="email"
               placeholder="Your email address"
@@ -85,9 +85,9 @@ export default function Footer() {
 
             <button
               type="submit"
-              className="px-4 py-3 rounded-md bg-[#f8c32c] text-[#164333] font-semibold hover:bg-white transition"
+              className="absolute right-0 px-4 py-3 rounded-md bg-[#f8c32c] text-[#164333] font-semibold hover:cursor-pointer transition"
             >
-              Subscribe
+              <Send />
             </button>
           </form>
 

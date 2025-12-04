@@ -39,7 +39,7 @@ export default function CTASection() {
               href="https://wp25.dynamiclayers.net/agrox/contact/"
               className="
                 inline-block bg-[#cfb23d] text-white font-semibold  
-                px-6 py-3 sm:px-7 sm:py-4
+                px-6 py-3 sm:px-7 sm:py-4 
                 rounded-md hover:bg-[#b99a2a] transition text-center
               "
             >
