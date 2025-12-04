@@ -14,5 +14,12 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
 ]);
+theme: {
+  extend: {
+    fontFamily: {
+      'dm-sans': ['"DM Sans"', 'sans-serif'],
+    },
+  },
+}
 
 export default eslintConfig;

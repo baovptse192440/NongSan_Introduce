@@ -1,0 +1,286 @@
+"use client";
+
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Minus, Phone, Plus, Wheat } from "lucide-react";
+
+export default function FaqSection() {
+  const [isOpen, setOpen] = useState(false);
+
+  const faqs = [
+    {
+      q: "What does your farm produce?",
+      a: "Agriculture is the backbone of our society, providing food, raw materials, and economic stability. As the world population grows, the need for sustainable farming practices has never been more critical.",
+    },
+    {
+      q: "Are your products available year-round?",
+      a: "Agriculture is the backbone of our society, providing food, raw materials, and economic stability. As the world population grows, the need for sustainable farming practices has never been more critical.",
+    },
+    {
+      q: "Where is your organic farm located?",
+      a: "Agriculture is the backbone of our society, providing food and raw materials.",
+    },
+    {
+      q: "Where is your organic farm located?",
+      a: "Agriculture is the backbone of our society, providing food and raw materials.",
+    },
+  ];
+
+  const [active, setActive] = useState(0);
+
+  return (
+    <section className=" bg-white">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-12 px-6">
+        
+       {/* LEFT CONTENT – WITH PREMIUM ANIMATIONS */}
+<motion.div
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.25 }}
+  variants={{
+    hidden: { opacity: 0, y: 40 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+        staggerChildren: 0.15,
+      },
+    },
+  }}
+  className="space-y-6"
+>
+  {/* Subtitle */}
+  <motion.h4
+    variants={{
+      hidden: { opacity: 0, y: 20 },
+      show: { opacity: 1, y: 0 },
+    }}
+    className="text-green-700 font-semibold mb-0 flex items-center gap-2"
+  >
+    Help and FAQ’s
+    <Wheat className="w-6 h-6 text-yellow-400" />
+  </motion.h4>
+
+ <motion.h2
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
+  className="text-5xl font-semiboldleading-tight text-[#164333] "
+>
+  <span className="block text-[#43aa5c]">
+    Frequently Ask
+  </span>
+
+  <span className="relative inline-block mt-2">
+    Questions!
+    <span className="absolute left-0 bottom-1 w-full h-3 bg-[#f8c32c] -z-10 rounded-md"></span>
+  </span>
+</motion.h2>
+
+
+  {/* Description */}
+  <motion.p
+    variants={{
+      hidden: { opacity: 0, y: 20 },
+      show: { opacity: 1, y: 0 },
+    }}
+    className="text-gray-600 mt-4"
+  >
+    Agriculture is the backbone of our society, providing food, <br />
+    raw materials, and economic stability.
+  </motion.p>
+
+  {/* VIDEO SECTION */}
+  <motion.div
+    variants={{
+      hidden: { opacity: 0, scale: 0.9 },
+      show: {
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 0.5, ease: "easeOut" },
+      },
+    }}
+    className="mt-8 relative rounded-xl h-[200px] w-[75%] overflow-hidden group cursor-pointer"
+    whileHover={{
+      scale: 1.02,
+      boxShadow: "0px 15px 30px rgba(0,0,0,0.18)",
+      transition: { type: "spring", stiffness: 140, damping: 12 },
+    }}
+  >
+    <img
+      src="https://wp25.dynamiclayers.net/agrox/wp-content/uploads/sites/4/2025/02/project-6.jpg"
+      alt="video"
+      className="rounded-xl object-cover w-full h-full"
+    />
+
+    {/* Play Overlay */}
+    <motion.div
+      onClick={() => setOpen(true)}
+      className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+    >
+      <motion.div
+        whileHover={{ scale: 1.15 }}
+        className="w-20 h-20 rounded-full border border-white flex items-center justify-center"
+      >
+        <svg width="60" height="60">
+          <polygon fill="white" points="20,15 45,30 20,45" />
+        </svg>
+      </motion.div>
+    </motion.div>
+  </motion.div>
+
+  {/* CTA + PHONE */}
+  <motion.div
+    variants={{
+      hidden: { opacity: 0, y: 20 },
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.4 },
+      },
+    }}
+    className="mt-10 flex items-start gap-10"
+  >
+    {/* CTA BUTTON */}
+    <motion.a
+      href="/contact"
+      whileHover={{
+        scale: 1.07,
+        backgroundColor: "#ffcf3f",
+        boxShadow: "0px 8px 20px rgba(252,185,0,0.35)",
+      }}
+      whileTap={{ scale: 0.95 }}
+      className="bg-[#fcb900] text-white px-8 py-3 rounded-xs shadow-md transition font-semibold"
+    >
+      Get In Touch
+    </motion.a>
+
+    {/* PHONE BOX */}
+    <motion.div
+      whileHover={{
+        scale: 1.06,
+        boxShadow: "0 10px 25px rgba(252,185,0,0.28)",
+      }}
+      transition={{ type: "spring", stiffness: 120, damping: 12 }}
+      className="flex gap-4 items-center"
+    >
+      <div className="p-3 rounded-full bg-[#fcb900] text-green-700 shadow-md">
+        <Phone />
+      </div>
+      <div>
+        <h3 className="font-bold text-lg">(704) 555-0127</h3>
+        <p className="text-gray-600 text-sm">Call For Booking</p>
+      </div>
+    </motion.div>
+  </motion.div>
+</motion.div>
+
+{/* RIGHT SIDE – ACCORDION */}
+<motion.div
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+  variants={{
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.15, duration: 0.4 },
+    },
+  }}
+>
+  {faqs.map((item, index) => {
+    const isActive = active === index;
+
+    return (
+      <motion.div
+        key={index}
+        onClick={() => setActive(isActive ? -1 : index)}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          show: { opacity: 1, y: 0 },
+        }}
+        whileHover={{
+          scale: 1.01,
+          transition: { type: "spring", stiffness: 120, damping: 12 },
+        }}
+        animate={{
+          borderColor: isActive ? "#F8C32C" : "#dddddd",
+          boxShadow: isActive
+            ? "0px 6px 18px rgba(248, 195, 44, 0.25)"
+            : "0px 0px 0px rgba(0,0,0,0)",
+          paddingBottom: isActive ? 26 : 16,
+        }}
+        transition={{ duration: 0.35, ease: "easeOut" }}
+        className="cursor-pointer border  px-4 py-4 rounded-xl mb-4"
+      >
+        {/* Header */}
+        <div className="flex justify-between items-center">
+          <motion.h3
+            animate={{
+              color: isActive ? "#F8C32C" : "#164333",
+              x: isActive ? 3 : 0,
+            }}
+            transition={{ duration: 0.3 }}
+            className="text-lg font-semibold"
+          >
+            {item.q}
+          </motion.h3>
+
+          {/* Icon */}
+          <motion.span
+  animate={{
+    rotate: isActive ? 180 : 0,
+    color: isActive ? "#F8C32C" : "#777",
+  }}
+  transition={{
+    type: "spring",
+    stiffness: 180,
+    damping: 12,
+  }}
+  className="text-xl"
+>
+  {isActive ? <Minus size={18} /> : <Plus size={18} />}
+</motion.span>
+        </div>
+
+        {/* CONTENT */}
+        <motion.div
+          initial={false}
+          animate={{
+            height: isActive ? "auto" : 0,
+            opacity: isActive ? 1 : 0,
+          }}
+          transition={{
+            height: { duration: 0.38 },
+            opacity: { duration: 0.25 },
+          }}
+          className="overflow-hidden"
+        >
+          <motion.p
+            initial={{ opacity: 0, y: -10, scale: 0.98 }}
+            animate={{
+              opacity: isActive ? 1 : 0,
+              y: isActive ? 0 : -10,
+              scale: isActive ? 1 : 0.98,
+            }}
+            transition={{ duration: 0.34, ease: "easeOut" }}
+            className="text-gray-700 mt-3 pl-1 pr-2"
+          >
+            {item.a}
+          </motion.p>
+        </motion.div>
+      </motion.div>
+    );
+  })}
+</motion.div>
+
+
+
+      </div>
+    </section>
+  );
+}
