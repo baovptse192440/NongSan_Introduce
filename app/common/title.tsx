@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { GiWheat } from "react-icons/gi";
 
-const headingText = "Sustainable Farming For Better Harvests!";
+const headingText = "Khám Phá Sản Phẩm Chất Lượng Cao Của Chúng Tôi!";
 
 export default function FarmingProjectsSection() {
   return (
@@ -20,13 +20,15 @@ export default function FarmingProjectsSection() {
             <h4
               className="
                 flex items-center gap-2 
-                text-green-700 
+                text-[#164333]
                 text-base sm:text-lg md:text-xl 
                 font-semibold 
+                font-[DM_Sans] tracking-tight
                 mb-3 md:mb-4
               "
             >
-              Farming Projects!
+             Sản Phẩm Nổi Bật
+
               <GiWheat size={26} className="text-yellow-500" />
             </h4>
 
@@ -38,6 +40,7 @@ export default function FarmingProjectsSection() {
                 text-gray-900 
                 leading-snug 
                 mb-4 sm:mb-5
+                font-[DM_Sans] tracking-tight
               "
             >
               <motion.span
@@ -55,15 +58,15 @@ export default function FarmingProjectsSection() {
             {/* Paragraph */}
             <p
               className="
-                text-gray-600 
+               text-[#164333]
                 text-sm sm:text-base md:text-lg 
                 leading-relaxed 
                 max-w-xl 
                 mt-2
               "
             >
-              Agriculture is the backbone of our society, providing food,
-              raw materials, and economic stability.
+             Chúng tôi tự hào giới thiệu các sản phẩm nông sản nổi bật, được tuyển chọn kỹ lưỡng, đảm bảo chất lượng và minh bạch từ nguồn gốc đến tay người tiêu dùng.
+
             </p>
           </div>
 
@@ -87,7 +90,8 @@ export default function FarmingProjectsSection() {
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    View All Projects
+    Xem Tất Cả Sản Phẩm
+
   </motion.a>
 </div>
 

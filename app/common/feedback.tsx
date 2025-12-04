@@ -8,8 +8,8 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"; // import CSS pagination
-const subHeading = "Testimonials";
-const headingText = "Feedback From our Clients!";
+const subHeading = " Phản Hồi";
+const headingText = "Từ Khách Hàng Úc!";
 const testimonials = [
   {
     name: "Scott Gonzalez",
@@ -93,13 +93,15 @@ export default function TestimonialsHeading() {
         </h2>
         {/* Paragraph */}
         <motion.p
-          className="font-dm-sans text-[17px] font-normal leading-[28px] tracking-[-0.2px] text-[#797F7D]"
+          className="font-dm-sans text-[17px] font-normal text-center leading-[28px] tracking-[-0.2px] text-[#797F7D]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.6 }}
         >
-          Agriculture is the backbone of our society, providing food, raw
-          materials, and economic stability.
+           Khách hàng tại Úc rất hài lòng với các sản phẩm cà phê và đặc sản của AusGlobal Connection. 
+           Phản hồi của họ nhấn mạnh chất lượng,
+            hương vị thơm ngon và sự ổn định trong từng lô hàng.
+          
         </motion.p>
       </div>
        <div className="relative w-full py-10 group">

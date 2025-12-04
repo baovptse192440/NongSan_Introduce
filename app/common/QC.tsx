@@ -8,16 +8,18 @@ import "swiper/css";
 
 export default function BrandSection() {
   const logos = [
+    "sponsor1.png",
+    "sponsor2.png",
     "sponsor3.png",
+    "sponsor4.png",
+    "sponsor5.png",
+    "sponsor6.png",
+     "sponsor1.png",
+    "sponsor2.png",
     "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
-    "sponsor3.png",
+    "sponsor4.png",
+    "sponsor5.png",
+    "sponsor6.png",
   ];
 
   return (
@@ -34,7 +36,7 @@ export default function BrandSection() {
         >
           <div className="absolute w-full border-t-2 border-dashed border-gray-300"></div>
           <p className="relative z-10 bg-white px-6 font-dmSans text-lg font-medium text-[#164333] tracking-tight">
-            2k Global Brands Trust Agrox
+            AusGlobal Connection – Niềm Tin Toàn Cầu
           </p>
         </motion.div>
 

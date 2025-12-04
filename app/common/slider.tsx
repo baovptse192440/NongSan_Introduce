@@ -9,80 +9,91 @@ import { motion } from "framer-motion";
 
 const products = [
   {
-    title: "Green Farming",
-    category: "Farming",
+    title: "Cà Phê Xoài",
+    category: "Coffee",
     description:
-      "Explore sustainable agriculture with innovative organic methods.",
-    image: "/san_pham.jpg",
+      "Hòa quyện hương xoài tự nhiên với cà phê rang mộc, mang đến trải nghiệm độc đáo và thơm ngon.",
+    image: "/cf_xoai.jpg",
   },
   {
-    title: "Organic Vegetables",
-    category: "Vegetables",
-    description: "High-quality organic vegetables for healthy living.",
-    image: "/san_pham1.jpg",
-  },
-  {
-    title: "Fresh Fruits",
-    category: "Fruits",
-    description: "Seasonal fruits with natural sweetness and flavor.",
-    image: "/san_pham2.jpg",
-  },
-  {
-    title: "Dairy Products",
-    category: "Dairy",
-    description: "Fresh and organic milk, cheese, and yogurt products.",
-    image: "/san_pham3.jpg",
-  },
-  {
-    title: "Grain Production",
-    category: "Grains",
-    description: "High yield and premium quality grains for consumption.",
-    image: "/san_pham4.jpg",
-  },
-  {
-    title: "Herbs & Spices",
-    category: "Herbs",
-    description: "Natural herbs and spices to enhance your meals.",
-    image: "/san_pham5.jpg",
-  },
-   {
-    title: "Green Farming",
-    category: "Farming",
+    title: "Cà Phê Arabica",
+    category: "Coffee",
     description:
-      "Explore sustainable agriculture with innovative organic methods.",
-    image: "/san_pham.jpg",
+      "Hạt Arabica tuyển chọn từ vùng cao nguyên Việt Nam, mang hương vị nhẹ nhàng, tinh tế và đậm đà.",
+    image: "/cf_ara.jpg",
   },
   {
-    title: "Organic Vegetables",
-    category: "Vegetables",
-    description: "High-quality organic vegetables for healthy living.",
-    image: "/san_pham1.jpg",
+    title: "Cà Phê Bạc Hà",
+    category: "Coffee",
+    description:
+      "Cà phê kết hợp hương bạc hà tươi mát, sảng khoái, lý tưởng để bắt đầu một ngày mới đầy năng lượng.",
+    image: "/cf_bh.jpg",
   },
   {
-    title: "Fresh Fruits",
-    category: "Fruits",
-    description: "Seasonal fruits with natural sweetness and flavor.",
-    image: "/san_pham2.jpg",
+    title: "Cà Phê Dừa",
+    category: "Coffee",
+    description:
+      "Hương dừa ngọt ngào kết hợp cà phê rang vừa, tạo nên thức uống độc đáo, thơm lừng và hấp dẫn.",
+    image: "/cf_dua.jpg",
   },
   {
-    title: "Dairy Products",
-    category: "Dairy",
-    description: "Fresh and organic milk, cheese, and yogurt products.",
-    image: "/san_pham3.jpg",
+    title: "Nước Mắm Phú Nhĩ",
+    category: "Condiments",
+    description:
+      "Nước mắm truyền thống Phú Nhĩ, lên men tự nhiên, hương vị đậm đà, thích hợp cho mọi món ăn Việt.",
+    image: "/nuocmam.jpg",
+  },
+ {
+    title: "Cà Phê Xoài",
+    category: "Coffee",
+    description:
+      "Hòa quyện hương xoài tự nhiên với cà phê rang mộc, mang đến trải nghiệm độc đáo và thơm ngon.",
+    image: "/cf_xoai.jpg",
   },
   {
-    title: "Grain Production",
-    category: "Grains",
-    description: "High yield and premium quality grains for consumption.",
-    image: "/san_pham4.jpg",
+    title: "Cà Phê Arabica",
+    category: "Coffee",
+    description:
+      "Hạt Arabica tuyển chọn từ vùng cao nguyên Việt Nam, mang hương vị nhẹ nhàng, tinh tế và đậm đà.",
+    image: "/cf_ara.jpg",
   },
   {
-    title: "Herbs & Spices",
-    category: "Herbs",
-    description: "Natural herbs and spices to enhance your meals.",
-    image: "/san_pham5.jpg",
+    title: "Cà Phê Bạc Hà",
+    category: "Coffee",
+    description:
+      "Cà phê kết hợp hương bạc hà tươi mát, sảng khoái, lý tưởng để bắt đầu một ngày mới đầy năng lượng.",
+    image: "/cf_bh.jpg",
+  },
+  {
+    title: "Cà Phê Dừa",
+    category: "Coffee",
+    description:
+      "Hương dừa ngọt ngào kết hợp cà phê rang vừa, tạo nên thức uống độc đáo, thơm lừng và hấp dẫn.",
+    image: "/cf_dua.jpg",
+  },
+  {
+    title: "Nước Mắm Phú Nhĩ",
+    category: "Condiments",
+    description:
+      "Nước mắm truyền thống Phú Nhĩ, lên men tự nhiên, hương vị đậm đà, thích hợp cho mọi món ăn Việt.",
+    image: "/nuocmam.jpg",
+  },
+  {
+    title: "Cà Phê Xoài",
+    category: "Coffee",
+    description:
+      "Hòa quyện hương xoài tự nhiên với cà phê rang mộc, mang đến trải nghiệm độc đáo và thơm ngon.",
+    image: "/cf_xoai.jpg",
+  },
+  {
+    title: "Cà Phê Arabica",
+    category: "Coffee",
+    description:
+      "Hạt Arabica tuyển chọn từ vùng cao nguyên Việt Nam, mang hương vị nhẹ nhàng, tinh tế và đậm đà.",
+    image: "/cf_ara.jpg",
   },
 ];
+
 
 export default function ProductSlider() {
   return (
@@ -128,14 +139,14 @@ export default function ProductSlider() {
               >
                 <motion.span
                   className="text-md text-yellow-300 block"
-                  variants={{ rest: { y: 0 }, hover: { y: -65 } }}
+                  variants={{ rest: { y: 0 }, hover: { y: -95 } }}
                   transition={{ duration: 0.5 }}
                 >
                   {product.category}
                 </motion.span>
                 <motion.h3
                   className="text-2xl text-white font-semibold"
-                  variants={{ rest: { y: 0 }, hover: { y: -65 } }}
+                  variants={{ rest: { y: 0 }, hover: { y: -95 } }}
                   transition={{ duration: 0.5 }}
                 >
                   {product.title}
@@ -144,7 +155,7 @@ export default function ProductSlider() {
 
               {/* Description */}
               <motion.p
-                className="absolute left-0 bottom-[30px] w-[calc(100%-48px)] mx-[24px] z-100 text-[#ddd] text-[16px] leading-relaxed opacity-0"
+                className="absolute left-0 bottom-[30px] w-[calc(100%-48px)] mx-[24px] z-100 text-white text-[16px] leading-relaxed opacity-0"
                 variants={{
                   rest: { opacity: 0, y: 20 },
                   hover: { opacity: 1, y: 0 },

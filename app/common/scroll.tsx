@@ -5,12 +5,13 @@ import { useEffect } from "react";
 import { GiWheat } from "react-icons/gi"; // thay thế FaWheat
 
 const services = [
-  "Sustainable Farming",
-  "Organic Production",
-  "Eco-Friendly Packaging",
-  "Precision Agriculture",
-  "Greenhouse Farming",
+  "Nhập khẩu nông sản sạch",
+  "Phân phối thực phẩm chất lượng cao",
+  "Giải pháp nông nghiệp bền vững",
+  "Kiểm soát nguồn gốc minh bạch",
+  "Hỗ trợ đối tác tại Úc",
 ];
+
 
 export default function ServicesScrollerSection() {
   const controls = useAnimation();

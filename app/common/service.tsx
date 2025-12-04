@@ -4,18 +4,19 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Fresh Organic Farming",
+    title: "Nhập khẩu nông sản chất lượng cao",
     img: "/service_1.jpg",
   },
   {
-    title: "Modern Dairy Production",
+    title: "Phân phối thực phẩm sạch",
     img: "/service_2.jpg",
   },
   {
-    title: "Sustainable Agriculture",
+    title: "Tư vấn và giải pháp nông nghiệp bền vững",
     img: "/service_3.jpg",
   },
 ];
+
 
 export default function ServiceCardSection() {
   return (
@@ -37,20 +38,22 @@ export default function ServiceCardSection() {
           viewport={{ once: true }}
           className="text-green-600 text-lg font-semibold mb-3 text-center"
         >
-          Our Services!
+          Dịch vụ của chúng tôi!
         </motion.h4>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-bold text-center leading-tight"
-        >
-          Delivering Top-Quality
-          <br />
-          <span className="text-green-600">Agricultural Services!</span>
-        </motion.h1>
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, ease: "easeOut" }}
+  viewport={{ once: true }}
+  className="text-3xl font-[DM_Sans] text-[#164333] tracking-tight md:text-5xl font-bold text-center leading-snug"
+>
+  Mang Đến Giải Pháp
+  <br />
+  <span className="text-[#164333]  font-[DM_Sans] tracking-tight mt-2 inline-block drop-shadow-md">
+    Nông Sản Chất Lượng Cao!
+  </span>
+</motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +62,7 @@ export default function ServiceCardSection() {
           viewport={{ once: true }}
           className="text-gray-600 text-center max-w-2xl mx-auto mt-6 text-lg"
         >
-          Agriculture is the backbone of our society, providing food, raw materials, and economic stability.
+          AusGlobal Connection cung cấp các dịch vụ nhập khẩu và phân phối nông sản sạch, thực phẩm chất lượng cao từ Việt Nam đến thị trường Úc, đảm bảo minh bạch, uy tín và bền vững.
         </motion.p>
 
         {/* Service Cards */}

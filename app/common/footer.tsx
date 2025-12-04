@@ -5,12 +5,13 @@ import { Facebook, Twitter, Instagram, Youtube, Send } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative  text-white bg-cover  bg-center py-16 mt-20"
-    style={{ backgroundImage: "url('/footer-background.jpg')" }}
+    <footer
+      className="relative text-white bg-cover bg-center py-16 mt-20"
+      style={{ backgroundImage: "url('/footer-background.jpg')" }}
     >
-        <div className="w-full h-full absolute bg-[#164333]/90 bottom-0 z-1"></div>
+      <div className="w-full h-full absolute bg-[#164333]/90 bottom-0 z-1"></div>
       <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 z-20 relative">
-    
+        
         {/* BRAND + ABOUT */}
         <div>
           <Image
@@ -21,8 +22,8 @@ export default function Footer() {
             className="mb-5"
           />
           <p className="text-gray-200 leading-relaxed text-sm">
-            Dedicated to sustainable and innovative farming practices,
-            producing high-quality crops while protecting the environment.
+            Cam kết phát triển nông nghiệp bền vững và sáng tạo,
+            cung cấp nông sản chất lượng cao đồng thời bảo vệ môi trường.
           </p>
 
           {/* Social Icons */}
@@ -41,45 +42,46 @@ export default function Footer() {
 
         {/* MENU */}
         <div>
-          <h3 className="text-lg font-semibold mb-5">Information</h3>
+          <h3 className="text-lg font-semibold mb-5">Thông tin</h3>
           <ul className="space-y-3 text-gray-200 text-sm">
-            <li><a href="#" className="hover:text-[#f8c32c] transition">Company</a></li>
-            <li><a href="#" className="hover:text-[#f8c32c] transition">Our Farmers</a></li>
-            <li><a href="#" className="hover:text-[#f8c32c] transition">Farming Services</a></li>
-            <li><a href="#" className="hover:text-[#f8c32c] transition">Help & FAQs</a></li>
-            <li><a href="#" className="hover:text-[#f8c32c] transition">Contact</a></li>
+            <li><a href="#" className="hover:text-[#f8c32c] transition">Về công ty</a></li>
+            <li><a href="#" className="hover:text-[#f8c32c] transition">Nông dân của chúng tôi</a></li>
+            <li><a href="#" className="hover:text-[#f8c32c] transition">Dịch vụ nông nghiệp</a></li>
+            <li><a href="#" className="hover:text-[#f8c32c] transition">Hướng dẫn & FAQ</a></li>
+            <li><a href="#" className="hover:text-[#f8c32c] transition">Liên hệ</a></li>
           </ul>
         </div>
 
         {/* CONTACT */}
-        <div>
-          <h3 className="text-lg font-semibold mb-5">Get In Touch</h3>
-          <ul className="space-y-4 text-sm">
-            <li>
-              <p className="text-[#f8c32c] font-semibold">Address:</p>
-              <p className="text-gray-200">785 15h Street, Office 478 Berlin, DE 81566</p>
-            </li>
-            <li>
-              <p className="text-[#f8c32c] font-semibold">Phone:</p>
-              <p className="text-gray-200">(704) 555-0127</p>
-            </li>
-            <li>
-              <p className="text-[#f8c32c] font-semibold">Mail Us:</p>
-              <a href="mailto:agrox@example.com" className="text-gray-200 hover:text-[#f8c32c]">
-                agrox@example.com
-              </a>
-            </li>
-          </ul>
-        </div>
+<div>
+  <h3 className="text-lg font-semibold mb-5">Liên hệ</h3>
+  <ul className="space-y-4 text-sm">
+    <li>
+      <p className="text-[#f8c32c] font-semibold">Địa chỉ:</p>
+      <p className="text-gray-200">77 - 83 Derrimut Drive, Derrimut VIC 3026</p>
+    </li>
+    <li>
+      <p className="text-[#f8c32c] font-semibold">Điện thoại:</p>
+      <p className="text-gray-200">+61.415.616.789</p>
+    </li>
+    <li>
+      <p className="text-[#f8c32c] font-semibold">Email:</p>
+      <a href="mailto:honglegalbco@gmail.com" className="text-gray-200 hover:text-[#f8c32c]">
+        honglegalbco@gmail.com
+      </a>
+    </li>
+  </ul>
+</div>
+
 
         {/* NEWSLETTER */}
         <div>
-          <h3 className="text-lg font-semibold mb-5">Subscribe Newsletter</h3>
+          <h3 className="text-lg font-semibold mb-5">Đăng ký nhận tin</h3>
 
           <form className="flex relative flex-col gap-3">
             <input
               type="email"
-              placeholder="Your email address"
+              placeholder="Nhập email của bạn"
               className="px-4 py-3 rounded-md bg-white text-[#164333] outline-none"
             />
 
@@ -92,14 +94,14 @@ export default function Footer() {
           </form>
 
           <p className="text-gray-200 text-sm mt-4">
-            Get the latest updates and offers for business services yearly.
+            Nhận thông tin cập nhật và ưu đãi mới nhất về dịch vụ nông nghiệp hàng năm.
           </p>
         </div>
       </div>
 
       {/* COPYRIGHT */}
       <div className="text-center z-20 relative text-gray-300 text-sm mt-16 border-t border-white/10 pt-6">
-        © {new Date().getFullYear()} Agrox. All Rights Reserved.
+        © {new Date().getFullYear()} AusGlobal Connection. Bảo lưu mọi quyền.
       </div>
     </footer>
   );

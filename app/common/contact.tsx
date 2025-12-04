@@ -24,12 +24,12 @@ export default function CTASection() {
 
           {/* Heading */}
           <div className="flex flex-col text-left w-full md:w-2/3 lg:w-1/2">
-            <h2 className="text-xl sm:text-xl md:text-3xl font-extrabold leading-tight text-white">
-              Invest in the Land.
+            <h2 className="text-xl sm:text-xl font-[DM_Sans] tracking-tight md:text-3xl font-extrabold leading-tight text-white">
+               Chất Lượng Nông Sản
             </h2>
 
-            <h2 className="text-xl sm:text-xl md:text-3xl font-extrabold leading-tight text-white mt-2">
-              Harvest the Future!
+            <h2 className="text-xl font-[DM_Sans] tracking-tight sm:text-xl md:text-3xl font-extrabold leading-tight text-white mt-2">
+             Sản Phẩm Tốt Nhất!
             </h2>
           </div>
 
@@ -43,7 +43,7 @@ export default function CTASection() {
                 rounded-md hover:bg-[#b99a2a] transition text-center
               "
             >
-              Get In Touch
+              Liên Hệ Ngay
             </a>
           </div>
 

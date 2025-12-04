@@ -9,23 +9,22 @@ export default function FaqSection() {
 
   const faqs = [
     {
-      q: "What does your farm produce?",
-      a: "Agriculture is the backbone of our society, providing food, raw materials, and economic stability. As the world population grows, the need for sustainable farming practices has never been more critical.",
+      q: "Trang trại của bạn sản xuất những gì?",
+      a: "Chúng tôi chuyên cung cấp các sản phẩm nông sản hữu cơ chất lượng cao, bao gồm rau củ, trái cây, cà phê và các sản phẩm chế biến tự nhiên, đảm bảo an toàn cho sức khỏe và thân thiện môi trường.",
     },
     {
-      q: "Are your products available year-round?",
-      a: "Agriculture is the backbone of our society, providing food, raw materials, and economic stability. As the world population grows, the need for sustainable farming practices has never been more critical.",
+      q: "Sản phẩm có sẵn quanh năm không?",
+      a: "Các sản phẩm được chúng tôi thu hoạch theo mùa và chế biến bảo quản hợp lý, giúp cung cấp liên tục quanh năm mà vẫn giữ nguyên chất lượng và độ tươi ngon của nông sản.",
     },
     {
-      q: "Where is your organic farm located?",
-      a: "Agriculture is the backbone of our society, providing food and raw materials.",
+      q: "Trang trại của bạn nằm ở đâu?",
+      a: "Trang trại hữu cơ của chúng tôi đặt tại vùng nông thôn sạch, có đất màu mỡ và khí hậu thuận lợi cho việc canh tác các loại rau, củ, trái cây và cà phê hữu cơ.",
     },
     {
-      q: "Where is your organic farm located?",
-      a: "Agriculture is the backbone of our society, providing food and raw materials.",
+      q: "Làm thế nào để đặt mua sản phẩm?",
+      a: "Bạn có thể liên hệ trực tiếp qua số điện thoại, email hoặc đặt hàng trực tuyến trên website của chúng tôi. Chúng tôi sẽ tư vấn và giao hàng tận nơi với dịch vụ nhanh chóng và tiện lợi.",
     },
   ];
-
   const [active, setActive] = useState(0);
 
   return (
@@ -57,9 +56,9 @@ export default function FaqSection() {
       hidden: { opacity: 0, y: 20 },
       show: { opacity: 1, y: 0 },
     }}
-    className="text-green-700 font-semibold mb-0 flex items-center gap-2"
+    className="text-green-700 font-[DM_Sans] tracking-tight font-semibold mb-0 flex items-center gap-2"
   >
-    Help and FAQ’s
+    Hỗ trợ & Câu hỏi thường gặp
     <Wheat className="w-6 h-6 text-yellow-400" />
   </motion.h4>
 
@@ -70,12 +69,12 @@ export default function FaqSection() {
   viewport={{ once: true }}
   className="text-5xl font-semiboldleading-tight text-[#164333] "
 >
-  <span className="block text-[#43aa5c]">
-    Frequently Ask
+  <span className="block font-[DM_Sans] tracking-tight text-[#43aa5c]">
+    Các câu hỏi
   </span>
 
-  <span className="relative inline-block mt-2">
-    Questions!
+  <span className="relative font-[DM_Sans] tracking-tight inline-block mt-2">
+    thường gặp!
     <span className="absolute left-0 bottom-1 w-full h-3 bg-[#f8c32c] -z-10 rounded-md"></span>
   </span>
 </motion.h2>
@@ -89,8 +88,8 @@ export default function FaqSection() {
     }}
     className="text-gray-600 mt-4"
   >
-    Agriculture is the backbone of our society, providing food, <br />
-    raw materials, and economic stability.
+   Chúng tôi luôn sẵn sàng giải đáp các thắc mắc về nông sản hữu cơ<br />
+   , phương pháp canh tác và cách đặt mua sản phẩm.
   </motion.p>
 
   {/* VIDEO SECTION */}
@@ -167,7 +166,7 @@ export default function FaqSection() {
     text-center
   "
 >
-  Get In Touch
+ Liên Hệ Ngay
 </motion.a>
 
 
@@ -206,7 +205,7 @@ export default function FaqSection() {
         text-gray-900
       "
     >
-      (704) 555-0127
+      +61.415.616.789
     </h3>
     <p className="text-gray-600 text-xs sm:text-sm">
       Call For Booking

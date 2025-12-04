@@ -38,18 +38,22 @@ export default function CooperateSection() {
               alt=""
             />
 
-            <h2 className="relative text-white font-dm-sans text-[26px] md:text-[32px] font-bold tracking-tight mb-4">
-              100% Trusted!
+            <h2 className="relative font-[DM_Sans] tracking-tight text-white font-dm-sans text-[26px] md:text-[32px] font-bold tracking-tight mb-4">
+              100% Tin Cậy!
             </h2>
 
-            <ul className="relative space-y-4">
-              {[1, 2, 3].map((i) => (
-                <li key={i} className="flex items-center gap-3 text-white text-[15px]">
-                  <Wheat className="text-yellow-400" size={20} />
-                  Tractor and harvester rentals farming
-                </li>
-              ))}
-            </ul>
+           <ul className="relative space-y-4 ">
+  {[
+    "Đảm bảo chất lượng sản phẩm và dịch vụ xuất sắc",
+    "Hợp tác lâu dài với nhiều đối tác uy tín",
+    "Đội ngũ nhân viên giàu kinh nghiệm và tận tâm"
+  ].map((text, i) => (
+    <li key={i} className="flex items-center gap-3 text-white text-[15px]">
+      <Wheat className="text-yellow-400" size={20} />
+      {text}
+    </li>
+  ))}
+</ul>
           </motion.div>
         </motion.div>
 
@@ -69,7 +73,7 @@ export default function CooperateSection() {
             transition={{ duration: 0.5 }}
             className="text-green-700 font-semibold text-sm flex items-center gap-2"
           >
-            Let’s Cooperate Together
+           Hợp Tác Cùng Chúng Tôi
             <Wheat className="w-5 h-5 text-yellow-400" />
           </motion.h4>
 
@@ -77,20 +81,19 @@ export default function CooperateSection() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[32px] md:text-[46px] font-bold leading-tight text-[#164333] mt-2"
+            className="text-[32px] font-[DM_Sans] tracking-tight md:text-[46px] font-bold leading-tight text-[#164333] mt-2"
           >
-            Get In Touch!
+            Liên Hệ Ngay!
           </motion.h1>
 
           <p className="text-gray-600 mt-3 leading-relaxed">
-            Agriculture is the backbone of our society, providing food, raw
-            materials, and economic stability.
+            Nông nghiệp là nền tảng của xã hội, cung cấp thực phẩm, nguyên liệu và tạo sự ổn định kinh tế.
           </p>
 
           {/* FORM */}
           <form className="mt-8 space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {["Name", "Email", "Phone", "Subject"].map((ph, i) => (
+              {["Họ và Tên", "Email", "Số điện thoại", "Chủ đề"].map((ph, i) => (
                 <motion.input
                   key={i}
                   type="text"
@@ -105,7 +108,7 @@ export default function CooperateSection() {
 
             <motion.textarea
               rows={4}
-              placeholder="Message"
+              placeholder="Nội dung tin nhắn"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -119,7 +122,7 @@ export default function CooperateSection() {
               className="bg-[#43aa5c] text-white py-3 px-8 rounded-md shadow-lg
                          hover:bg-[#f8c32c] hover:cursor-pointer hover:text-[#164333] transition font-semibold"
             >
-              Send Message
+               Gửi Tin Nhắn
             </motion.button>
           </form>
         </motion.div>

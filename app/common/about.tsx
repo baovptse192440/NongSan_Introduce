@@ -5,13 +5,14 @@ import { Phone, Tractor, Wheat } from "lucide-react";
 
 const featureData = [
   {
-    title: "Chất lượng hàng đầu",
-    desc: "Sản phẩm được tuyển chọn kỹ lưỡng trước khi xuất khẩu."
+    title: "Chất lượng vượt trội",
+    desc: "Sản phẩm được lựa chọn kỹ lưỡng, đạt chuẩn xuất khẩu Úc."
   },
   {
     title: "Nguồn gốc minh bạch",
-    desc: "Kiểm soát quy trình sản xuất và truy xuất nguồn gốc rõ ràng."
+    desc: "Kiểm soát chặt chẽ quy trình sản xuất, truy xuất nguồn gốc rõ ràng."
   },
+
 ];
 
 export default function AboutSection() {
@@ -68,18 +69,16 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <h4 className="inline-flex text-lg md:text-xl font-semibold text-green-700 tracking-wide mb-4 font-['Glittery_Snowfall']">
-              30 years of agriculture experience
+              Hơn 10 năm kinh nghiệm trong xuất khẩu nông sản
             </h4>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 mb-6">
-              Về Chúng Tôi – AusGlobal Connection
-            </h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight  mb-6 text-[#164333] font-[DM_Sans] tracking-tight">
+  Về Chúng Tôi – <span className="text-green-700">AusGlobal Connection</span>
+</h1>
+
 
             <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-10">
-              AusGlobal Connection là đơn vị tiên phong trong việc nhập khẩu &
-              phân phối nông sản, thực phẩm chất lượng cao từ Việt Nam và Á Châu
-              đến thị trường Úc. Chúng tôi cam kết mang lại uy tín, chất lượng,
-              minh bạch và trách nhiệm trong từng sản phẩm.
+              AusGlobal Connection là công ty tiên phong trong việc nhập khẩu và phân phối nông sản, thực phẩm sạch, chất lượng cao từ Việt Nam sang thị trường Úc. Chúng tôi cam kết mang lại sản phẩm uy tín, minh bạch, đồng thời đảm bảo trách nhiệm với khách hàng và đối tác.
             </p>
 
             {/* FEATURE LIST */}
@@ -107,20 +106,19 @@ export default function AboutSection() {
             </div>
 
             {/* LIST WITH ICON */}
-            <div className="flex flex-col gap-3 mb-10">
-              {[1, 2, 3].map((_, i) => (
-                <motion.span
-                  key={i}
-                  className="flex gap-3 items-center text-gray-700 text-lg"
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: i * 0.15 }}
-                >
-                  <Tractor className="text-orange-500" />
-                  Pioneering Excellence in the Agriculture Market
-                </motion.span>
-              ))}
-            </div>
+            {["Xuất khẩu nông sản sạch", "Đối tác uy tín tại Úc", "Cam kết chất lượng"] .map((text, i) => (
+  <motion.span 
+    key={i} 
+    className="flex gap-3 items-center pb-3 text-gray-700 text-lg" 
+    initial={{ opacity: 0, x: -20 }} 
+    whileInView={{ opacity: 1, x: 0 }} 
+    transition={{ duration: 0.8, delay: i * 0.15 }}
+  >
+    <Tractor className="text-orange-500" />
+    {text}
+  </motion.span>
+))}
+
 
             {/* ACTION BUTTON + CONTACT */}
             <div className="flex flex-wrap items-center gap-8">
@@ -130,7 +128,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.3 }}
                 className="py-3 px-7 bg-[#F8C32C] text-white font-semibold rounded-xl shadow-md cursor-pointer"
               >
-                More About Us
+                Tìm hiểu thêm về AusGlobal
               </motion.span>
 
               {/* Phone contact */}
@@ -144,8 +142,8 @@ export default function AboutSection() {
                 </div>
 
                 <div>
-                  <span className="font-bold text-xl block">071 123 4567</span>
-                  <div className="text-sm text-gray-500">Call For Booking</div>
+                  <span className="font-bold text-xl block">+61415616789</span>
+                  <div className="text-sm text-gray-500">Liên hệ đặt hàng</div>
                 </div>
               </motion.div>
             </div>
