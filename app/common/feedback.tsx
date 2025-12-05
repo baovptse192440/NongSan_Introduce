@@ -8,55 +8,55 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"; // import CSS pagination
-const subHeading = " Phản Hồi";
-const headingText = "Từ Khách Hàng Úc!";
+const subHeading = "Testimonials";
+const headingText = "From Our Partners & Customers!";
 const testimonials = [
   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+    name: "Michael Chen",
+    position: "CEO, Fresh Market Australia",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "AusGlobal Connection has been our trusted partner for over 3 years. Their Vietnamese coffee and agricultural products consistently meet our quality standards. Excellent service and reliable supply chain.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "Sarah Williams",
+    position: "Procurement Manager, Asian Foods Co.",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "Working with AusGlobal Connection has transformed our product offerings. The authentic flavors of Vietnamese coffee and Asian specialty foods have been a huge hit with our customers. Highly recommended!",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "David Thompson",
+    position: "Restaurant Owner, Melbourne",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "The quality of fresh agricultural products from AusGlobal Connection is outstanding. Our customers love the authentic Vietnamese herbs and vegetables. Great partnership and consistent quality.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "Emma Rodriguez",
+    position: "Retail Chain Director",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "AusGlobal Connection delivers premium products with transparent sourcing. Their dried fruits and nuts are top-quality, and their commitment to compliance makes them our preferred supplier.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "James Anderson",
+    position: "Food Import Specialist",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "Professional service, authentic products, and reliable logistics. AusGlobal Connection understands the Australian market and delivers exactly what we need. A true business partner.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "Lisa Park",
+    position: "Grocery Store Owner, Sydney",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "Our customers keep coming back for AusGlobal's Vietnamese coffee and Asian specialty foods. The authentic taste and quality are unmatched. Thank you for bringing these products to Australia!",
     rating: 5,
   },
 ];
@@ -98,10 +98,7 @@ export default function TestimonialsHeading() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.6 }}
         >
-           Khách hàng tại Úc rất hài lòng với các sản phẩm cà phê và đặc sản của AusGlobal Connection. 
-           Phản hồi của họ nhấn mạnh chất lượng,
-            hương vị thơm ngon và sự ổn định trong từng lô hàng.
-          
+          Australian customers and business partners consistently praise AusGlobal Connection for exceptional product quality, authentic flavors, and reliable service. Their feedback highlights our commitment to bringing the finest Vietnamese and Asian products to Australia.
         </motion.p>
       </div>
        <div className="relative w-full py-10 group">

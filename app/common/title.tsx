@@ -23,7 +23,7 @@ export default function FarmingProjectsSection() {
                 text-[#164333]
                 text-base sm:text-lg md:text-xl 
                 font-semibold 
-                font-[DM_Sans] tracking-tight
+                 tracking-tight
                 mb-3 md:mb-4
               "
             >
@@ -40,7 +40,7 @@ export default function FarmingProjectsSection() {
                 text-gray-900 
                 leading-snug 
                 mb-4 sm:mb-5
-                font-[DM_Sans] tracking-tight
+                 tracking-tight
               "
             >
               <motion.span
