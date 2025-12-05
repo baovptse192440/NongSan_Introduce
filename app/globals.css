@@ -1,13 +1,6 @@
 @import "tailwindcss";
 html, body {
-  font-family:
-    -apple-system,       /* San Francisco trên iOS/macOS */
-    BlinkMacSystemFont,  /* Safari macOS cũ */
-    "SF Pro",            /* Font bạn tự nhúng */
-    "Segoe UI",          /* Windows */
-    Roboto,              /* Android */
-    Helvetica, Arial,
-    sans-serif;
+  font-family: 'SF Pro';
 }
 
 .container {
@@ -28,7 +21,7 @@ html, body {
 }
 @font-face {
   font-family: "SF Pro";
-  src: url("/fonts/SFPro/SanFranciscoDisplay-Medium.otf") format("opentype");
+  src: url("/fonts/SFPro/SF-Pro-Display-Regular.otf") format("opentype");
   font-weight: 400;
 }
 
@@ -36,5 +29,11 @@ html, body {
   font-family: "SF Pro";
   src: url("/fonts/SFPro/SanFranciscoDisplay-Bold.otf") format("opentype");
   font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("/fonts/SFPro/SanFranciscoDisplay-Semibold.otf") format("opentype");
+  font-weight: 600;
 }
 

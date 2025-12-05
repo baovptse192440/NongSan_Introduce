@@ -18,8 +18,8 @@ export default function CooperateSection() {
         >
           {/* Background Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/background-1.jpg')" }}
+            className="absolute inset-0 bg-cover bg-right"
+            style={{ backgroundImage: "url('/banner_1.jpg')" }}
           />
 
           {/* Dark overlay for better readability */}
@@ -38,7 +38,7 @@ export default function CooperateSection() {
               alt=""
             />
 
-            <h2 className="relative font-[DM_Sans] tracking-tight text-white font-dm-sans text-[26px] md:text-[32px] font-bold tracking-tight mb-4">
+            <h2 className="relative  tracking-tight text-white  text-[26px] md:text-[32px] font-bold  mb-4">
               100% Tin Cậy!
             </h2>
 
@@ -81,7 +81,7 @@ export default function CooperateSection() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[32px] font-[DM_Sans] tracking-tight md:text-[46px] font-bold leading-tight text-[#164333] mt-2"
+            className="text-[32px]  tracking-tight md:text-[46px] font-bold leading-tight text-[#164333] mt-2"
           >
             Liên Hệ Ngay!
           </motion.h1>

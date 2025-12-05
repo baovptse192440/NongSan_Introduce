@@ -13,7 +13,7 @@ const posts = [
     category: "Fertilizers",
     excerpt:
       "Agriculture is the backbone of our society, providing food, raw materials, and economic stability.",
-    image: "/post-8.jpg",
+    image: "/new_1.jpg",
     href: "/posts/saving-resources",
   },
   {
@@ -24,7 +24,7 @@ const posts = [
     category: "Farming",
     excerpt:
       "Practical methods and technologies that help farms reduce waste and increase yields sustainably.",
-    image: "/post-7.jpg",
+    image: "/new_2.jpg",
     href: "/posts/sustainability-shapes-farming",
   },
   {
@@ -35,7 +35,7 @@ const posts = [
     category: "Agriculture",
     excerpt:
       "Short insights and best practices for modern farming and resource management , and resource management.",
-    image: "/post-6.jpg",
+    image: "/new_3.jpg",
     href: "/posts/agriculture-insights",
   },
 ];

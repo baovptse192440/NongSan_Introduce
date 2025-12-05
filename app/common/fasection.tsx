@@ -9,20 +9,36 @@ export default function FaqSection() {
 
   const faqs = [
     {
-      q: "Trang trại của bạn sản xuất những gì?",
-      a: "Chúng tôi chuyên cung cấp các sản phẩm nông sản hữu cơ chất lượng cao, bao gồm rau củ, trái cây, cà phê và các sản phẩm chế biến tự nhiên, đảm bảo an toàn cho sức khỏe và thân thiện môi trường.",
+      q: "What product lines do you import and distribute?",
+      a: "We supply premium Vietnamese coffee, fresh agricultural products (vegetables, herbs, crops), dried fruits and nuts, Asian specialty foods, spices and seasonings, and processed/packaged foods for the Australian market.",
     },
     {
-      q: "Sản phẩm có sẵn quanh năm không?",
-      a: "Các sản phẩm được chúng tôi thu hoạch theo mùa và chế biến bảo quản hợp lý, giúp cung cấp liên tục quanh năm mà vẫn giữ nguyên chất lượng và độ tươi ngon của nông sản.",
+      q: "Do you provide certifications and compliance documents?",
+      a: "Yes. We provide all required documentation for Australian import compliance, including origin, quality certifications, and food safety records where applicable.",
     },
     {
-      q: "Trang trại của bạn nằm ở đâu?",
-      a: "Trang trại hữu cơ của chúng tôi đặt tại vùng nông thôn sạch, có đất màu mỡ và khí hậu thuận lợi cho việc canh tác các loại rau, củ, trái cây và cà phê hữu cơ.",
+      q: "What are typical MOQs and lead times?",
+      a: "MOQs vary by category. Coffee and packaged foods usually start from pallet quantities; fresh produce depends on seasonality. Standard lead times range from 2–6 weeks, subject to product availability and shipping schedules.",
     },
     {
-      q: "Làm thế nào để đặt mua sản phẩm?",
-      a: "Bạn có thể liên hệ trực tiếp qua số điện thoại, email hoặc đặt hàng trực tuyến trên website của chúng tôi. Chúng tôi sẽ tư vấn và giao hàng tận nơi với dịch vụ nhanh chóng và tiện lợi.",
+      q: "Do you offer private label (OEM) or custom packaging?",
+      a: "Yes. We support private label and tailored packaging for eligible SKUs, subject to design approval, MOQ, and production timelines.",
+    },
+    {
+      q: "How do you ensure product quality and consistency?",
+      a: "We work with vetted producers, implement strict supplier screening, and perform batch-level checks. Cold-chain and proper storage are used where required to maintain freshness and quality.",
+    },
+    {
+      q: "Which regions in Australia do you service?",
+      a: "We supply nationwide through our logistics partners, with regular deliveries to major hubs in VIC, NSW, QLD, SA, and WA.",
+    },
+    {
+      q: "What payment and shipping terms are available?",
+      a: "Flexible terms can be arranged depending on order size and product type. We support common trade terms and coordinate sea or air freight as needed.",
+    },
+    {
+      q: "How can I place a wholesale order or request samples?",
+      a: "Contact our team for a product catalogue, pricing, and samples. We will guide you through selection, documentation, and logistics to ensure a smooth onboarding.",
     },
   ];
   const [active, setActive] = useState(0);
@@ -56,9 +72,9 @@ export default function FaqSection() {
       hidden: { opacity: 0, y: 20 },
       show: { opacity: 1, y: 0 },
     }}
-    className="text-green-700 font-[DM_Sans] tracking-tight font-semibold mb-0 flex items-center gap-2"
+    className="text-green-700 tracking-tight font-semibold mb-0 flex items-center gap-2"
   >
-    Hỗ trợ & Câu hỏi thường gặp
+    Support & FAQs
     <Wheat className="w-6 h-6 text-yellow-400" />
   </motion.h4>
 
@@ -69,12 +85,12 @@ export default function FaqSection() {
   viewport={{ once: true }}
   className="text-5xl font-semiboldleading-tight text-[#164333] "
 >
-  <span className="block font-[DM_Sans] tracking-tight text-[#43aa5c]">
-    Các câu hỏi
+  <span className="block  tracking-tight text-[#43aa5c]">
+    Frequently Asked
   </span>
 
-  <span className="relative font-[DM_Sans] tracking-tight inline-block mt-2">
-    thường gặp!
+  <span className="relative  tracking-tight inline-block mt-2">
+    Questions
     <span className="absolute left-0 bottom-1 w-full h-3 bg-[#f8c32c] -z-10 rounded-md"></span>
   </span>
 </motion.h2>
@@ -88,8 +104,7 @@ export default function FaqSection() {
     }}
     className="text-gray-600 mt-4"
   >
-   Chúng tôi luôn sẵn sàng giải đáp các thắc mắc về nông sản hữu cơ<br />
-   , phương pháp canh tác và cách đặt mua sản phẩm.
+   We’re here to help with wholesale, compliance, logistics, and product enquiries for the Australian market.
   </motion.p>
 
   {/* VIDEO SECTION */}
@@ -110,8 +125,8 @@ export default function FaqSection() {
     }}
   >
     <img
-      src="https://wp25.dynamiclayers.net/agrox/wp-content/uploads/sites/4/2025/02/project-6.jpg"
-      alt="video"
+      src="QA.jpg"
+      
       className="rounded-xl object-cover w-full h-full"
     />
 
@@ -166,7 +181,7 @@ export default function FaqSection() {
     text-center
   "
 >
- Liên Hệ Ngay
+Contact Us
 </motion.a>
 
 
@@ -207,9 +222,7 @@ export default function FaqSection() {
     >
       +61.415.616.789
     </h3>
-    <p className="text-gray-600 text-xs sm:text-sm">
-      Call For Booking
-    </p>
+    <p className="text-gray-600 text-xs sm:text-sm">Business & Wholesale Enquiries</p>
   </div>
 </motion.div>
 

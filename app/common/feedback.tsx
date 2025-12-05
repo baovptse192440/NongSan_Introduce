@@ -8,55 +8,55 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"; // import CSS pagination
-const subHeading = " Phản Hồi";
-const headingText = "Từ Khách Hàng Úc!";
+const subHeading = "Testimonials";
+const headingText = "From Our Partners & Customers!";
 const testimonials = [
   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+    name: "Michael Chen",
+    position: "CEO, Fresh Market Australia",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "AusGlobal Connection has been our trusted partner for over 3 years. Their Vietnamese coffee and agricultural products consistently meet our quality standards. Excellent service and reliable supply chain.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "Sarah Williams",
+    position: "Procurement Manager, Asian Foods Co.",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "Working with AusGlobal Connection has transformed our product offerings. The authentic flavors of Vietnamese coffee and Asian specialty foods have been a huge hit with our customers. Highly recommended!",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "David Thompson",
+    position: "Restaurant Owner, Melbourne",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "The quality of fresh agricultural products from AusGlobal Connection is outstanding. Our customers love the authentic Vietnamese herbs and vegetables. Great partnership and consistent quality.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "Emma Rodriguez",
+    position: "Retail Chain Director",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "AusGlobal Connection delivers premium products with transparent sourcing. Their dried fruits and nuts are top-quality, and their commitment to compliance makes them our preferred supplier.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "James Anderson",
+    position: "Food Import Specialist",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "Professional service, authentic products, and reliable logistics. AusGlobal Connection understands the Australian market and delivers exactly what we need. A true business partner.",
     rating: 5,
   },
-   {
-    name: "Scott Gonzalez",
-    position: "Corporate .INC",
+  {
+    name: "Lisa Park",
+    position: "Grocery Store Owner, Sydney",
     avatar: "avatar_1.jpg",
     image: "chili.png",
-    quote: "This weeder is lightweight and easy to handle. Works best in soft, moist soil. It helps reduce manual labor and is a great addition for kitchen organic plots.",
+    quote: "Our customers keep coming back for AusGlobal's Vietnamese coffee and Asian specialty foods. The authentic taste and quality are unmatched. Thank you for bringing these products to Australia!",
     rating: 5,
   },
 ];
@@ -85,23 +85,20 @@ export default function TestimonialsHeading() {
         </h4>
 
         {/* Main heading */}
-        <h2 className="text-[#164333] font-[DM_Sans] text-[46px] font-bold leading-[54px] tracking-[-1px]">
+        <h2 className="text-[#164333]  text-[46px] font-bold leading-[54px] tracking-[-1px]">
             Feedback From
         </h2>
-        <h2 className="text-[#164333] font-[DM_Sans] text-[46px] font-bold leading-[54px] tracking-[-1px] mb-[20px] ">
+        <h2 className="text-[#164333]  text-[46px] font-bold leading-[54px] tracking-[-1px] mb-[20px] ">
             our Community!
         </h2>
         {/* Paragraph */}
         <motion.p
-          className="font-dm-sans text-[17px] font-normal text-center leading-[28px] tracking-[-0.2px] text-[#797F7D]"
+          className=" text-[17px] font-normal text-center leading-[28px] tracking-[-0.2px] text-[#797F7D]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.6 }}
         >
-           Khách hàng tại Úc rất hài lòng với các sản phẩm cà phê và đặc sản của AusGlobal Connection. 
-           Phản hồi của họ nhấn mạnh chất lượng,
-            hương vị thơm ngon và sự ổn định trong từng lô hàng.
-          
+          Australian customers and business partners consistently praise AusGlobal Connection for exceptional product quality, authentic flavors, and reliable service. Their feedback highlights our commitment to bringing the finest Vietnamese and Asian products to Australia.
         </motion.p>
       </div>
        <div className="relative w-full py-10 group">
@@ -130,49 +127,65 @@ export default function TestimonialsHeading() {
 >
 
         {testimonials.map((item, index) => (
-          <SwiperSlide key={index} className="py-4">
-  <div className="relative rounded-xl bg-white py-10 px-7 cursor-pointer shadow-xs overflow-hidden">
-    <div className="absolute h-full">
-      <img src="chili.png" alt="" />
+         <SwiperSlide key={index} className="py-4">
+  <div className="
+    relative bg-white rounded-2xl shadow-md 
+    overflow-hidden cursor-pointer
+    px-7 py-10
+    h-[460px] sm:h-[500px] md:h-[520px]
+    flex flex-col
+  ">
+    
+    {/* Background Icon */}
+    <div className="absolute h-full opacity-30 left-0 top-0">
+      <img src="chili.png" alt="" className="h-full" />
     </div>
 
     {/* Background Image */}
     <img
       src={item.image}
       alt=""
-      className="absolute h-full w-full object-cover top-0 left-0 opacity-10"
+      className="absolute top-0 left-0 h-full w-full object-cover opacity-10"
     />
 
     {/* Quote Icon */}
-    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-4xl text-yellow-500">
+    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-4xl text-yellow-500 z-10">
       <Quote className="w-7 h-7" />
     </div>
 
-    {/* Avatar + Name + Position */}
-    <div className="flex gap-5 mb-6 relative z-10">
-      <div className="w-[80px] h-[80px]">
+    {/* Avatar + Info */}
+    <div className="flex gap-5 mb-5 relative z-10">
+      <div className="w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] shrink-0">
         <img
-          className="h-full w-full rounded-full object-cover"
+          className="w-full h-full rounded-full object-cover"
           src={item.avatar}
           alt={item.name}
         />
       </div>
+
       <div className="flex flex-col justify-center">
-        <h3 className="text-[22px] font-semibold text-[#164333] mb-1">
+        <h3 className="text-xl md:text-2xl font-semibold text-[#164333] mb-1">
           {item.name}
         </h3>
-        <h4 className="text-[20px] font-medium text-[#F8C32C] m-0">
+        <h4 className="text-lg md:text-xl font-medium text-[#F8C32C]">
           {item.position}
         </h4>
       </div>
     </div>
 
-    {/* Quote Text */}
-    <p className="text-[18px] leading-8 text-[#164333] mb-15 relative z-10">
+    {/* Quote Text – CLAMPED */}
+    <p
+      className="
+        text-base md:text-lg leading-7 text-[#164333]
+        relative z-10
+        line-clamp-4   /* Giữ form UI, không cho text đẩy card cao */
+        flex-1         /* Chiếm đều không gian còn lại */
+      "
+    >
       "{item.quote}"
     </p>
 
-    {/* Stars */}
+    {/* Rating */}
     <ul className="flex mt-4 relative z-10">
       {Array.from({ length: item.rating }).map((_, i) => (
         <li key={i}>
@@ -182,6 +195,7 @@ export default function TestimonialsHeading() {
     </ul>
   </div>
 </SwiperSlide>
+
 
         ))}
       </Swiper>

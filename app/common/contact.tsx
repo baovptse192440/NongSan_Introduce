@@ -24,11 +24,11 @@ export default function CTASection() {
 
           {/* Heading */}
           <div className="flex flex-col text-left w-full md:w-2/3 lg:w-1/2">
-            <h2 className="text-xl sm:text-xl font-[DM_Sans] tracking-tight md:text-3xl font-extrabold leading-tight text-white">
+            <h2 className="text-xl sm:text-xl tracking-tight md:text-3xl font-extrabold leading-tight text-white">
                Chất Lượng Nông Sản
             </h2>
 
-            <h2 className="text-xl font-[DM_Sans] tracking-tight sm:text-xl md:text-3xl font-extrabold leading-tight text-white mt-2">
+            <h2 className="text-xl tracking-tight sm:text-xl md:text-3xl font-extrabold leading-tight text-white mt-2">
              Sản Phẩm Tốt Nhất!
             </h2>
           </div>
@@ -50,9 +50,9 @@ export default function CTASection() {
           {/* Farmer Image */}
           <div className="hidden md:block absolute right-0 bottom-0">
             <img
-              src="cta-farmer.png"
+              src="luan.png"
               alt="Farmer"
-              className="w-[170px] md:w-[200px] lg:w-[230px] object-contain"
+              className="w-[170px] md:w-[200px] lg:w-[400px] object-contain"
             />
           </div>
 
